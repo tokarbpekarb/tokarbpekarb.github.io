@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="JS/script.js"></script>
+    <script src="JS/cookie.js"></script>
+</head>
+
+<body>
+    <header >
+        <nav class="top-menu">
+            <ul class="header">
+                <li class="logo"><a class="logo"  href="example.html"><img src="images/logo.png" alt="Logo" width="150"></a></li>
+    
+                <li class="menu"> <a class="menu" href="example.html">О себе</a></li>
+                
+                <li class="menu"><a class="menu" href="summary.html">Резюме</a></li>
+    
+                <li class="menu"><a class="menu" href="portfolio.html">Портфолио</a></li>
+    
+                <li class="menu"> <a class="menu" href="competence.html">Компетенции</a></li>
+    
+                <li class="menu"><a class="menu" href="contacts.html"> Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article class="article-with-background-image" id="changeable_background">
+        <div class="content-width">
+            <div class="article-header">
+                <div>
+                    <button onclick="text_selection('changeable_text')">Выделить текст</button>
+                    <button onclick="remove_text_selection('changeable_text')">Убрать выделение</button>
+                    <button onclick="change_text_style('changeable_text')">Выделить текст / убрать выделение</button>
+                    <button id="second_hidden_button" onclick="remove_button('second_hidden_button')"> исчезающая кнопка</button>
+                    <button onclick="change_background_image('changeable_background')">Сменить оформление</button>
+                    <button onclick="hide_block('hideable_block')"> Скрыть/Показать блок</button>
+                </div>
+                <div>
+                    <h1 class="article-header-text">Веб-технологии</h1>
+                    <h2 class="article-header-text">Университет "Дубна"</h2>
+                </div>
+            </div>
+            <div class="portfolio-div hideable_block">
+                <img  class="hideable_block" src="images/bogatyr2.jpg" alt="Добрыня" width="500">
+                <div class="portfolio-text hideable_block">
+                    <h1>Заголовок</h1>
+                    <p class="changeable_text">«Опера — всем» — международный оперный фестиваль, который проходит на открытых площадках Санкт-Петербурга:
+                         Петропавловская крепость, Елагин остров, Александровский парк и Екатерининский дворец в Царском селе.
+                        Художественный руководитель фестиваля — Фабио Мастранджело, арт-директор — Виктор Высоцкий. Первый фестиваль
+                         состоялся в июле 2012 года; проходит при поддержке комитета по культуре Санкт-Петербурга.
+                         Вход на все спектакли бесплатный. Телеканал «Санкт-Петербург» организует прямую телетрансляцию всех событий фестиваля.
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-div">
+                <img src="images/vorkuta.jpg" alt="Автобус" width="500">
+                <div class="portfolio-text">
+                    <h1>Заголовок</h1>
+                    <p class="changeable_text">Ikarus 263 — городской автобус производства венгерской фирмы Ikarus.
+                         Представляет собой модификацию автобуса Ikarus 260 с удлинённой на две короткие оконные секции базой.
+                          Эти машины начали выпускаться во второй половине 1980-х годов и поначалу поставлялись только на немецкий рынок,
+                           чуть позже и на венгерский, а в Советский Союз пришли в 1989 году.
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-div">
+                <img src="images/hrusch.jpg" alt="хрущевка" width="500">
+                <div class="portfolio-text">
+                    <h1>Заголовок</h1>
+                    <p class="changeable_text">Воркута́ (нен. Варкута, коми Вӧркута) — город в Республике Коми Российской Федерации. Входит в городской округ Воркута.
+            
+                        Воркута — шестой по величине город за северным полярным кругом и самый восточный город Европы.
+                        
+                        Распоряжением Правительства РФ от 16 апреля 2015 года № 668-р «Об утверждении перечня моногородов» муниципальное образование городского округа «Воркута» включено в категорию «Монопрофильные муниципальные образования Российской Федерации (моногорода), в которых имеются риски ухудшения социально-экономического положения».
+                        
+                        Указом Президента Российской Федерации от 10 сентября 2021 года городу было присвоено звание «Город трудовой доблести».
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <a class="footer-logos" href="https://github.com"><img  src="images/git.png" alt="Github logo" width="80"> </a>
+        <a class="footer-logos" href="https://web.telegram.org/"><img  src="images/telegram.png" alt="telegram logo" width="80"> </a>
+        <a class="footer-logos" href="https://vk.com"><img  src="images/VK_Logo.png" alt="vk logo" width="80"> </a>
+        <p class="footer-text"><b >Сайт разработан лично мной (c)2021</b></p>
+    </footer>
+
+</body>
+</html>

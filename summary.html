@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="JS/script.js"></script>
+    <script src="JS/cookie.js"></script>
+</head>
+
+<body>
+    <header >
+        <nav class="top-menu">
+            <ul class="header">
+                <li class="logo"><a class="logo"  href="example.html"><img src="images/logo.png" alt="Logo" width="150"></a></li>
+    
+                <li class="menu"> <a class="menu" href="example.html">О себе</a></li>
+                
+                <li class="menu"><a class="menu" href="summary.html">Резюме</a></li>
+    
+                <li class="menu"><a class="menu" href="portfolio.html">Портфолио</a></li>
+    
+                <li class="menu"> <a class="menu" href="competence.html">Компетенции</a></li>
+    
+                <li class="menu"><a class="menu" href="contacts.html"> Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article id="changeable_background">
+        <div class="article-header">
+            <div>
+                <button onclick="text_selection('changeable_text')">Выделить текст</button>
+                    <button onclick="remove_text_selection('changeable_text')">Убрать выделение</button>
+                    <button onclick="change_text_style('changeable_text')">Выделить текст / убрать выделение</button>
+                    <button id="first_hidden_button" onclick="remove_button('first_hidden_button')"> исчезающая кнопка</button>
+                    <button onclick="change_theme('changeable_background')">Сменить оформление</button>
+                    <button onclick="hide_block('hideable_block')"> Скрыть/Показать блок</button>
+            </div>
+            <div>
+                <h1 class="article-header-text">Веб-технологии</h1>
+                <h2 class="article-header-text">Университет "Дубна"</h2>
+            </div>
+        </div>
+        <table class="summary-table hideable_block">
+            <caption class="summary-table-caption"> Опыт работы</caption>
+            <thead>
+                <tr >
+                    <td>Год</td>
+                    <td> Место работы(учебы), должность</td>
+                    <td>Должностные обязанности</td>
+                </tr>
+            </thead>
+            
+            <tbody class="summary-table-body changeable_text">
+                <tr>
+                    <td>2020-2024</td>
+                    <td>Государственный университет "Дубна" Информатика и вычислительная техника</td>
+                    <td></td>
+                </tr>
+    
+                <tr>
+                    <td>2024-2028</td>
+                    <td>ПАО "Газпром", Веб-дизайнер</td>
+                    <td> Поддержка и развитие интерфейса продукта: 
+                        <ul>
+                            <li>проектирование и оформление интерфейсов, их анимация:</li>
+                            <li>подготовка материалов для разработчиков;</li>
+                            <li>отслеживание реализации интерфейсов разработчиками.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2023 - настоящее время</td>
+                    <td>Яндекс, фронтенд разработчик</td>
+                    <td> 
+                        <ul>
+                          <li>Разработка мобильных и веб приложений</li>
+                          <li>Создание дизайн-проектов</li>
+                          <li>Поддержка и оптимизация существующего кода</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </article>
+
+    <footer class="footer">
+        <a class="footer-logos" href="https://github.com"><img  src="images/git.png" alt="Github logo" width="80"> </a>
+        <a class="footer-logos" href="https://web.telegram.org/"><img  src="images/telegram.png" alt="telegram logo" width="80"> </a>
+        <a class="footer-logos" href="https://vk.com"><img  src="images/VK_Logo.png" alt="vk logo" width="80"> </a>
+        <p class="footer-text"><b >Сайт разработан лично мной (c)2021</b></p>
+    </footer>
+
+</body>
+</html>

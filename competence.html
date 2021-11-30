@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="JS/script.js"></script>
+    <script src="JS/cookie.js"></script>
+</head>
+
+<body>
+    <header >
+        <nav class="top-menu">
+            <ul class="header">
+                <li class="logo"><a class="logo"  href="example.html"><img src="images/logo.png" alt="Logo" width="150"></a></li>
+    
+                <li class="menu"> <a class="menu" href="example.html">О себе</a></li>
+                
+                <li class="menu"><a class="menu" href="summary.html">Резюме</a></li>
+    
+                <li class="menu"><a class="menu" href="portfolio.html">Портфолио</a></li>
+    
+                <li class="menu"> <a class="menu" href="competence.html">Компетенции</a></li>
+    
+                <li class="menu"><a class="menu" href="contacts.html"> Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article class="article-with-background-image" id="changeable_background">
+        <div class="content-width">
+            <div class="article-header">
+                <div>
+                    <button onclick="text_selection('changeable_text')">Выделить текст</button>
+                    <button onclick="remove_text_selection('changeable_text')">Убрать выделение</button>
+                    <button onclick="change_text_style('changeable_text')">Выделить текст / убрать выделение</button>
+                    <button id="first_hidden_button" onclick="remove_button('first_hidden_button')"> исчезающая кнопка</button>
+                    <button onclick="change_background_image('changeable_background')">Сменить оформление</button>
+                    <button onclick="hide_block('hideable_block')"> Скрыть/Показать блок</button>
+                </div>
+                <div>
+                    <h1 class="article-header-text">Веб-технологии</h1>
+                    <h2 class="article-header-text">Университет "Дубна"</h2>
+                </div>
+            </div>
+            <div class="first-competence-block hideable_block">
+                <div class="bogatyr-text changeable_text hideable_block">
+                    <p class="hideable_block">
+                        <h1>Крутой заголовок</h1>
+                        Ронин (яп. 浪人, ро: нин, букв. 浪 «блуждающие волны» + 人 «человек» = «странник») — деклассированный воин феодального периода Японии (1185—1868),
+                        потерявший покровительство своего сюзерена, либо не сумевший уберечь его от смерти. Этимология термина ронин восходит к периодам Нара и Хэйан,
+                        когда он означал слуг, бежавших с земель своего господина. В редких случаях — странник, не имеющий над собой чужой власти, свободный воин.
+                    </p>
+                </div>
+                <img class="hideable_block" src="images/dobrina.jpg" alt="bogatyr" width="500">
+
+            </div>
+            <div class="second-competence-block">
+                <div> <h1>Мои компетенции</h1></div>
+                <div class="competences">
+                    <div> 
+                        <img src="images/html.png" alt="html logo" width="170">
+                        <h3>HTML разработка</h3>
+                    </div>
+                    <div>
+                        <img src="images/python.png" alt="python logo" width="150">
+                        <h3>Программирование на python</h3>
+                    </div>
+                    <div>
+                        <img src="images/c sharp.png" alt="c# logo" width="150">
+                        <h3>Разработка и поддержка C# проектов</h3>
+                    </div>
+                    <div>
+                        <img src="images/java.png" alt="java logo" width="90">
+                        <h3>Написание кода на Java</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="third-competence-block">
+                <h1>Услуги</h1>
+                <div class="competence-list">
+                    <div>
+                        <ul>
+                            <li>Разработка веб-приложений</li>
+                            <li>Создание онлайн-игр</li>
+                            <li>Внедрение информационных систем на производствах</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Разработка систем защиты данных</li>
+                            <li>Создание приложений для мобильных платформ</li>
+                            <li>Поддержка любого вашего проекта (индивидуально)</li>
+                            <li>Продвижение ваших разработок</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fourth-competence-block">
+                <h1>Заголовок похуже</h1>
+                <p>Шкала исходов Глазго (англ. Glasgow Outcome Scale, GOS) — широко используемая в медицине шкала,
+                     которая позволяет оценить качество жизни пострадавших после черепно-мозговой травмы с учётом социальной
+                      активности и остаточных психоневрологических нарушений[1]. Также шкалу исходов Глазго активно используют
+                       при оценке эффективности применения того или иного метода лечения. Предложена в 1975 году профессором
+                        нейрохирургом из Глазго Б. Дженнетом[en] в журнале Lancet[2].
+                </p>
+                <button>Сделать круто</button>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <a class="footer-logos" href="https://github.com"><img  src="images/git.png" alt="Github logo" width="80"> </a>
+        <a class="footer-logos" href="https://web.telegram.org/"><img  src="images/telegram.png" alt="telegram logo" width="80"> </a>
+        <a class="footer-logos" href="https://vk.com"><img  src="images/VK_Logo.png" alt="vk logo" width="80"> </a>
+        <p class="footer-text"><b >Сайт разработан лично мной (c)2021</b></p>
+    </footer>
+
+</body>
+</html>

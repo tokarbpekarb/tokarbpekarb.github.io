@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="JS/script.js"></script>
+    <script src="JS/cookie.js"></script>
+</head>
+
+<body>
+    <header >
+        <nav class="top-menu">
+            <ul class="header">
+                <li class="logo"><a class="logo"  href="example.html"><img src="images/logo.png" alt="Logo" width="150"></a></li>
+    
+                <li class="menu"> <a class="menu" href="example.html">О себе</a></li>
+                
+                <li class="menu"><a class="menu" href="summary.html">Резюме</a></li>
+    
+                <li class="menu"><a class="menu" href="portfolio.html">Портфолио</a></li>
+    
+                <li class="menu"> <a class="menu" href="competence.html">Компетенции</a></li>
+    
+                <li class="menu"><a class="menu" href="contacts.html"> Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article id="changeable_background">
+        <div class="article-header">
+            <div>
+                <button onclick="text_selection('changeable_text')">Выделить текст</button>
+                    <button onclick="remove_text_selection('changeable_text')">Убрать выделение</button>
+                    <button onclick="change_text_style('changeable_text')">Выделить текст / убрать выделение</button>
+                    <button id="first_hidden_button" onclick="remove_button('first_hidden_button')"> исчезающая кнопка</button>
+                    <button onclick="change_theme('changeable_background')">Сменить оформление</button>
+                    <button onclick="hide_block('hideable_block')"> Скрыть/Показать блок</button>
+            </div>
+            <div>
+                <h1 class="article-header-text">Веб-технологии</h1>
+                <h2 class="article-header-text">Университет "Дубна"</h2>
+            </div>
+        </div>
+        <div class="contacts-form">
+            <div>
+                <h1> Напишите мне! </h1>
+            </div>
+            <div id="contacts-form">
+                <form action="javascript: reg()" name="register" method="get">
+                    <div class="contacts-div">
+                        <label>Как вам удобно получить ответ:</label>
+                        <p><input  type="radio" name="answer" value="по почте">По почте</p>
+                        <p><input type="radio" name="answer" value="по телефону"> по телефону</p>
+                        <p><input type="radio" name="answer" value="не нужно отвечать"> не нужно отвечать</p>
+                    </div>
+                    <div class="contacts-div">
+                        <label>Укажите тему вопроса:</label>
+                        <select name="theme">
+                            <option value="Работа">Работа</option>
+                            <option value="Учеба">Учеба</option>
+                        </select>
+                    </div>
+                    <div class="contacts-div">
+                        <label>Оцените этот сайт</label>
+                        <p><input id="checkbox1" name="site_rating" type="checkbox" value="Хороший дизайн">Хороший дизайн</p>
+                        <p><input id="checkbox2" name="site_rating" type="checkbox" value="Корректная работа сайта">Корректная работа сайта</p>
+                        <p><input id="checkbox3" name="site_rating" type="checkbox" value="Удобный интерфейс">Удобный интерфейс</p>
+                    </div>
+                    <div class="contacts-div">
+                        <p>Ваше имя  <input type="text" name="name"> </p>
+                        <p>Адрес почты  <input type="text" name="email"> </p>
+                        <p>Номер телефона  <input type="text" name="phone_number"> </p>
+                    </div>
+                    <div class="contacts-div">
+                        <label>Ваш вопрос</label>
+                        <textarea name="question"></textarea>
+                        <button type="submit"> Отправить вопрос</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="contacts changeable_text hideable_block">
+            <div class="contacts-div hideable_block">
+                <h1>Я в социальных сетях:</h1>
+                <img class="contacts-social-links" src="images/git.png" alt="Github logo" width="80">
+                <img class="contacts-social-links" src="images/telegram.png" alt="telegram logo" width="80">
+                <img class="contacts-social-links" src="images/VK_Logo.png" alt="vk logo" width="80">
+            </div>
+            <div class="contacts-div hideable_block">
+                <h1>Почта:</h1>
+                <p>vasya44@pochta.ru</p>
+            </div>
+            <div class="contacts-div hideable_block">
+                <h1>Телефон</h1>
+                <p>8(800)555-35-35</p>
+            </div>
+        </div>
+
+    </article>
+    
+    <footer class="footer">
+        <p class="footer-text"><b >Сайт разработан лично мной (c)2021</b></p>
+    </footer>
+
+</body>
+</html>
