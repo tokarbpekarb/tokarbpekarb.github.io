@@ -16,12 +16,12 @@ function change_background_image(element_id){
     for (var i = 0; i < elements.length; i++) {
         elements[i].classList.toggle("changed_background_image");
     }
-    //if(getCookie("background")=="changed"){
-    //    setCookie("background","default");
-    //}
-    //else{
+    if(getCookie("background")=="changed"){
+        setCookie("background","default");
+    }
+    else{
         setCookie("background","changed");
-    //}
+    }
 }
 
 function change_theme(element_id){
