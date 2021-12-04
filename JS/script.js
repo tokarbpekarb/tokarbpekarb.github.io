@@ -158,6 +158,7 @@ function change_image(direction){
 function small_sizing()
 {
     setCookie("gallery_size","small");
+    document.gallery.image_size.small.checked;
     document.getElementById("image").classList.add("small_image");
     document.getElementById("image").classList.remove("medium_image");
     document.getElementById("image").classList.remove("large_image");
