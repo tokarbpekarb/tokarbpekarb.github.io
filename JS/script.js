@@ -158,21 +158,18 @@ function change_image(direction){
 function small_sizing()
 {
     setCookie("gallery_size","small");
-    document.getElementById("small_sizing_button").checked= true;
     document.getElementById("image").classList.add("small_image");
     document.getElementById("image").classList.remove("medium_image");
     document.getElementById("image").classList.remove("large_image");
 }
 function medium_sizing(){
     setCookie("gallery_size","medium");
-    document.getElementById("medium_sizing_button").checked= true;
     document.getElementById("image").classList.add("medium_image");
     document.getElementById("image").classList.remove("small_image");
     document.getElementById("image").classList.remove("large_image");
 }
 function large_sizing(){
     setCookie("gallery_size","large");
-    document.getElementById("large_sizing_button").checked= true;
     document.getElementById("image").classList.add("large_image");
     document.getElementById("image").classList.remove("small_image");
     document.getElementById("image").classList.remove("medium_image");

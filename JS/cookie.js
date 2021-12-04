@@ -63,11 +63,14 @@ function getCookie(name) {
   function set_gallery_size(){
     if(getCookie("gallery_size")=="small"){
       small_sizing();
+      document.getElementById("small_sizing_button").checked= true;
     }
     if(getCookie("gallery_size")=="medium"){
       medium_sizing();
+      document.getElementById("medium_sizing_button").checked= true;
     }
     else{
+      document.getElementById("large_sizing_button").checked= true;
       large_sizing();
     }
   }
