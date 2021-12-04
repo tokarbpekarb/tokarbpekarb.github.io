@@ -55,7 +55,7 @@ function getCookie(name) {
   function is_gallery_started(){
     if(getCookie("gallery_timer")=="enabled")
     {
-      deleteCookie("gallaey_timer");
+      deleteCookie("gallery_timer");
       start_stop_gallery();
     }
   }
