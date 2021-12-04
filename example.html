@@ -9,7 +9,7 @@
     <script src="JS/cookie.js"></script>
 </head>
 
-<body onload="load_example_page()" >
+<body onload="load_example_page()">
     <header >
         <nav class="top-menu">
             <ul class="header">
@@ -37,14 +37,14 @@
                     <button onclick="change_text_style('changeable_text')">Выделить текст / убрать выделение</button>
                     <button id="first_hidden_button" onclick="remove_button('first_hidden_button')"> исчезающая кнопка</button>
                     <button onclick="change_background_image('article-with-background-image')">Сменить оформление</button>
-                    <button onclick="hide_block('hideable_block')"> Скрыть/Показать блок</button>
+                    <button onclick="hide_block('example_hideable_block')"> Скрыть/Показать блок</button>
                 </div>
                 <div>
                     <h1 class="article-header-text">Веб-технологии</h1>
                     <h2 class="article-header-text">Университет "Дубна"</h2>
                 </div>
             </div>
-            <div class="example-content hideable_block">
+            <div class="example-content example_hideable_block">
                 <p class="changeable_text" oncopy="alert('УПС!'); return false">
                     DWDM (Dense Wavelength Division Multiplexing) — плотное мультиплексирование с разделением по длине волны.
         

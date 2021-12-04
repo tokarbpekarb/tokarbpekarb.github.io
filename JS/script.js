@@ -5,6 +5,13 @@ function remove_button(element_id){
 
 function hide_block(element_id){
     var elements = document.getElementsByClassName(element_id);
+    if(getCookie(element_id)=="hidden")
+    {
+        setCookie(element_id,"visible");
+    }
+    else{
+        setCookie(element_id,"hidden");
+    }
     for (var i = 0; i < elements.length; i++) {
         elements[i].classList.toggle("changed_block_visible");
     }  
@@ -36,6 +43,12 @@ function change_theme(element_id){
 
 function change_text_style(element_id){
     var elements = document.getElementsByClassName(element_id);
+    if(getCookie("text_style")=="changed"){
+        setCookie("text_style","default");
+    }
+    else{
+        setCookie("text_style","changed");
+    }
     for (var i = 0; i < elements.length; i++) {
         elements[i].classList.toggle("changed_text_style");
     }  
@@ -43,12 +56,14 @@ function change_text_style(element_id){
 
 function text_selection(element_id){
     var elements = document.getElementsByClassName(element_id);
+    setCookie("text_style","changed");
     for (var i = 0; i < elements.length; i++) {
         elements[i].classList.add("changed_text_style");
     }    
 }
 
 function remove_text_selection(element_id){
+    setCookie("text_style","default");
     var elements = document.getElementsByClassName(element_id);
     for (var i = 0; i < elements.length; i++) {
         elements[i].classList.remove("changed_text_style");
@@ -96,10 +111,14 @@ var mult;
 function load_example_page(){
     alert('Hi!');
     init_gallery();
-    mult=true;
-    multi()
+    //mult=true;
+    //multi()
     document.getElementById("image").classList.add("large_image");
     is_background_changed('article-with-background-image');
+    is_gallery_started();
+    set_gallery_size();
+    is_text_style_changed('changeable_text');
+    is_block_hidden('example_hideable_block');
 }
 function init_gallery(){
     n=0;
@@ -128,37 +147,43 @@ function change_image(direction){
     //document.getElementById("image").style.opacity = 1;
     //document.getElementById("image").classList.remove("hidden");
 }
-let timerID;
-function multi(){
-    timerID= setInterval(change_image,3000,1);
+
+//function multi(){
+    //timerID= setInterval(change_image,3000,1);
     //while(mult){
     //    setTimeout(change_image, 1000, 1);
     //}
-}
+//}
 
 function small_sizing()
 {
+    setCookie("gallery_size","small");
     document.getElementById("image").classList.add("small_image");
     document.getElementById("image").classList.remove("medium_image");
     document.getElementById("image").classList.remove("large_image");
 }
 function medium_sizing(){
+    setCookie("gallery_size","medium");
     document.getElementById("image").classList.add("medium_image");
     document.getElementById("image").classList.remove("small_image");
     document.getElementById("image").classList.remove("large_image");
 }
 function large_sizing(){
+    setCookie("gallery_size","large");
     document.getElementById("image").classList.add("large_image");
     document.getElementById("image").classList.remove("small_image");
     document.getElementById("image").classList.remove("medium_image");
 }
+let timerID;
 function start_stop_gallery(){
-    if(mult){
+    if(getCookie("gallery_timer")=="enabled"){
+        setCookie("gallery_timer","disabled");
         clearTimeout(timerID);
-        mult=false;
+        ///mult=false;
     }
     else{
-        mult=true;
-        multi();
+        //mult=true;
+        timerID= setInterval(change_image,3000,1);
+        setCookie("gallery_timer","enabled");
     }
 }

@@ -9,7 +9,7 @@
     <script src="JS/cookie.js"></script>
 </head>
 
-<body>
+<body onload="is_theme_changed('changeable_background'); is_block_hidden('contacts_hideable_block'); is_text_style_changed('changeable_text');">
     <header >
         <nav class="top-menu">
             <ul class="header">
@@ -36,7 +36,7 @@
                     <button onclick="change_text_style('changeable_text')">Выделить текст / убрать выделение</button>
                     <button id="first_hidden_button" onclick="remove_button('first_hidden_button')"> исчезающая кнопка</button>
                     <button onclick="change_theme('changeable_background')">Сменить оформление</button>
-                    <button onclick="hide_block('hideable_block')"> Скрыть/Показать блок</button>
+                    <button onclick="hide_block('contacts_hideable_block')"> Скрыть/Показать блок</button>
             </div>
             <div>
                 <h1 class="article-header-text">Веб-технологии</h1>
@@ -82,18 +82,18 @@
             </div>
         </div>
 
-        <div class="contacts changeable_text hideable_block">
-            <div class="contacts-div hideable_block">
+        <div class="contacts changeable_text contacts_hideable_block">
+            <div class="contacts-div contacts_hideable_block">
                 <h1>Я в социальных сетях:</h1>
                 <img class="contacts-social-links" src="images/git.png" alt="Github logo" width="80">
                 <img class="contacts-social-links" src="images/telegram.png" alt="telegram logo" width="80">
                 <img class="contacts-social-links" src="images/VK_Logo.png" alt="vk logo" width="80">
             </div>
-            <div class="contacts-div hideable_block">
+            <div class="contacts-div contacts_hideable_block">
                 <h1>Почта:</h1>
                 <p>vasya44@pochta.ru</p>
             </div>
-            <div class="contacts-div hideable_block">
+            <div class="contacts-div contacts_hideable_block">
                 <h1>Телефон</h1>
                 <p>8(800)555-35-35</p>
             </div>

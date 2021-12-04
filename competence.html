@@ -9,7 +9,7 @@
     <script src="JS/cookie.js"></script>
 </head>
 
-<body>
+<body onload="is_background_changed('changeable_background'); is_block_hidden('competence_hideable_block');  is_text_style_changed('changeable_text');">
     <header >
         <nav class="top-menu">
             <ul class="header">
@@ -37,23 +37,23 @@
                     <button onclick="change_text_style('changeable_text')">Выделить текст / убрать выделение</button>
                     <button id="first_hidden_button" onclick="remove_button('first_hidden_button')"> исчезающая кнопка</button>
                     <button onclick="change_background_image('changeable_background')">Сменить оформление</button>
-                    <button onclick="hide_block('hideable_block')"> Скрыть/Показать блок</button>
+                    <button onclick="hide_block('competence_hideable_block')"> Скрыть/Показать блок</button>
                 </div>
                 <div>
                     <h1 class="article-header-text">Веб-технологии</h1>
                     <h2 class="article-header-text">Университет "Дубна"</h2>
                 </div>
             </div>
-            <div class="first-competence-block hideable_block">
-                <div class="bogatyr-text changeable_text hideable_block">
-                    <p class="hideable_block">
+            <div class="first-competence-block competence_hideable_block">
+                <div class="bogatyr-text changeable_text competence_hideable_block">
+                    <p class="competence_hideable_block">
                         <h1>Крутой заголовок</h1>
                         Ронин (яп. 浪人, ро: нин, букв. 浪 «блуждающие волны» + 人 «человек» = «странник») — деклассированный воин феодального периода Японии (1185—1868),
                         потерявший покровительство своего сюзерена, либо не сумевший уберечь его от смерти. Этимология термина ронин восходит к периодам Нара и Хэйан,
                         когда он означал слуг, бежавших с земель своего господина. В редких случаях — странник, не имеющий над собой чужой власти, свободный воин.
                     </p>
                 </div>
-                <img class="hideable_block" src="images/dobrina.jpg" alt="bogatyr" width="500">
+                <img class="competence_hideable_block" src="images/dobrina.jpg" alt="bogatyr" width="500">
 
             </div>
             <div class="second-competence-block">

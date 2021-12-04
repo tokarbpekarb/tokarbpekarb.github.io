@@ -9,7 +9,7 @@
     <script src="JS/cookie.js"></script>
 </head>
 
-<body>
+<body onload="is_background_changed('changeable_background'); is_block_hidden('portfolio_hideable_block'); is_text_style_changed('changeable_text');">
     <header >
         <nav class="top-menu">
             <ul class="header">
@@ -37,16 +37,16 @@
                     <button onclick="change_text_style('changeable_text')">Выделить текст / убрать выделение</button>
                     <button id="second_hidden_button" onclick="remove_button('second_hidden_button')"> исчезающая кнопка</button>
                     <button onclick="change_background_image('changeable_background')">Сменить оформление</button>
-                    <button onclick="hide_block('hideable_block')"> Скрыть/Показать блок</button>
+                    <button onclick="hide_block('portfolio_hideable_block')"> Скрыть/Показать блок</button>
                 </div>
                 <div>
                     <h1 class="article-header-text">Веб-технологии</h1>
                     <h2 class="article-header-text">Университет "Дубна"</h2>
                 </div>
             </div>
-            <div class="portfolio-div hideable_block">
-                <img  class="hideable_block" src="images/bogatyr2.jpg" alt="Добрыня" width="500">
-                <div class="portfolio-text hideable_block">
+            <div class="portfolio-div portfolio_hideable_block">
+                <img  class="portfolio_hideable_block" src="images/bogatyr2.jpg" alt="Добрыня" width="500">
+                <div class="portfolio-text portfolio_hideable_block">
                     <h1>Заголовок</h1>
                     <p class="changeable_text">«Опера — всем» — международный оперный фестиваль, который проходит на открытых площадках Санкт-Петербурга:
                          Петропавловская крепость, Елагин остров, Александровский парк и Екатерининский дворец в Царском селе.

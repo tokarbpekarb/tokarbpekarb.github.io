@@ -9,7 +9,7 @@
     <script src="JS/cookie.js"></script>
 </head>
 
-<body>
+<body onload="is_theme_changed('changeable_background'); is_block_hidden('summary_hideable_block'); is_text_style_changed('changeable_text');">
     <header >
         <nav class="top-menu">
             <ul class="header">
@@ -36,14 +36,14 @@
                     <button onclick="change_text_style('changeable_text')">Выделить текст / убрать выделение</button>
                     <button id="first_hidden_button" onclick="remove_button('first_hidden_button')"> исчезающая кнопка</button>
                     <button onclick="change_theme('changeable_background')">Сменить оформление</button>
-                    <button onclick="hide_block('hideable_block')"> Скрыть/Показать блок</button>
+                    <button onclick="hide_block('summary_hideable_block')"> Скрыть/Показать блок</button>
             </div>
             <div>
                 <h1 class="article-header-text">Веб-технологии</h1>
                 <h2 class="article-header-text">Университет "Дубна"</h2>
             </div>
         </div>
-        <table class="summary-table hideable_block">
+        <table class="summary-table summary_hideable_block">
             <caption class="summary-table-caption"> Опыт работы</caption>
             <thead>
                 <tr >

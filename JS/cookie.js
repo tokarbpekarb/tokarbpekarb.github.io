@@ -37,12 +37,12 @@ function getCookie(name) {
   }
 
   function is_background_changed(element_id){
-      console.log("hmm" + getCookie("background"));
+      //console.log("hmm" + getCookie("background"));
       if(getCookie("background")=="changed")
       {
           deleteCookie("background");
           change_background_image(element_id);
-          console.log("succesfuly");
+          //console.log("succesfuly");
       }
   }
   function is_theme_changed(element_id){
@@ -50,5 +50,41 @@ function getCookie(name) {
           deleteCookie("theme");
           change_theme(element_id);
       }
+  }
+
+  function is_gallery_started(){
+    if(getCookie("gallery_timer")=="enabled")
+    {
+      deleteCookie("gallaey_timer");
+      start_stop_gallery();
+    }
+  }
+
+  function set_gallery_size(){
+    if(getCookie("gallery_size")=="small"){
+      small_sizing();
+    }
+    if(getCookie("gallery_size")=="medium"){
+      medium_sizing();
+    }
+    if(getCookie("gallery_size")=="large"){
+      large_sizing();
+    }
+  }
+
+  function  is_block_hidden(element_id){
+    if(getCookie(element_id)=="hidden")
+    {
+      deleteCookie(element_id);
+      hide_block(element_id);
+    }
+  }
+
+  function is_text_style_changed(element_id){
+    if(getCookie("text_style")=="changed")
+    {
+      deleteCookie("text_style");
+      change_text_style(element_id);
+    }
   }
 
