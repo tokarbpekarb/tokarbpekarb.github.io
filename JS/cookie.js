@@ -67,7 +67,7 @@ function getCookie(name) {
     if(getCookie("gallery_size")=="medium"){
       medium_sizing();
     }
-    if(getCookie("gallery_size")=="large"){
+    else{
       large_sizing();
     }
   }
