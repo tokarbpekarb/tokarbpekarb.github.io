@@ -113,7 +113,7 @@ function load_example_page(){
     init_gallery();
     //mult=true;
     //multi()
-    document.getElementById("image").classList.add("large_image");
+    //document.getElementById("image").classList.add("large_image");
     is_background_changed('article-with-background-image');
     is_gallery_started();
     set_gallery_size();
