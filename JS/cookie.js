@@ -46,7 +46,7 @@ function getCookie(name) {
       }
   }
   function is_theme_changed(element_id){
-      if(getCookie("theme")=="changed"){
+      if(getCookie("theme")=="dark"){
           deleteCookie("theme");
           change_theme(element_id);
       }

@@ -33,11 +33,11 @@ function change_background_image(element_id){
 
 function change_theme(element_id){
     document.getElementById(element_id).classList.toggle("changed_theme");
-    if(getCookie('theme')=='dark'){
-        setCookie('theme','light');
+    if(getCookie("theme")=="dark"){
+        setCookie("theme","light");
     }
     else{
-        setCookie('theme','dark');
+        setCookie("theme","dark");
     }
 }
 
